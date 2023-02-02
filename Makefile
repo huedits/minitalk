@@ -4,6 +4,7 @@ NAMES = server
 CFLAGS = -Wall -Wextra -Werror
 INCLPATH = ./includes/
 SRCPATH = ./srcs/
+PFPATH = ./ft_printf/libftprintf.a
 RM = rm -rf
 
 CSRCS = $(addprefix $(SRCPATH), \
@@ -16,19 +17,24 @@ SSRCS = $(addprefix $(SRCPATH), \
 
 all: $(NAMEC) $(NAMES)
 
-$(NAMEC):
-	cc -I $(INCLPATH) $(CSRCS) -o $@ $(CFLAGS)
+$(NAMEC): $(PFPATH)
+	cc -I $(INCLPATH) $(CSRCS) $(PFPATH) -o $@ $(CFLAGS)
 
-$(NAMES):
-	cc -I $(INCLPATH) $(SSRCS) -o $@ $(CFLAGS)
+$(NAMES): $(PFPATH)
+	cc -I $(INCLPATH) $(SSRCS) $(PFPATH) -o $@ $(CFLAGS)
+
+$(PFPATH):
+	$(MAKE) all -C ./ft_printf/
 
 clean:
 	$(RM) $(CSRCS:%.c=%.o)
 	$(RM) $(SSRCS:%.c=%.o)
+	$(MAKE) clean -C ./ft_printf/
 
 fclean: clean
 	$(RM) $(NAMEC)
 	$(RM) $(NAMES)
+	$(MAKE) fclean -C ./ft_printf/
 
 re: fclean all
 

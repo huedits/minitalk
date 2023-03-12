@@ -19,7 +19,7 @@ Obs: This project includes previous project [ft_printf](https://github.com/huedi
 [client.c](srcs/client.c)
 | [server.c](srcs/server.c)
 | [utils.c](srcs/utils.c)
-| [client_bonus.c](srcs/client_bonus.c)
+\ [client_bonus.c](srcs/client_bonus.c)
 | [server_bonus.c](srcs/server_bonus.c)
 | [utils_bonus.c](srcs/utils_bonus.c)
 

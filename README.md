@@ -23,7 +23,7 @@ Obs: This project includes previous project [ft_printf](https://github.com/huedi
 | [server_bonus.c](srcs/server_bonus.c)
 | [utils_bonus.c](srcs/utils_bonus.c)
 
-**[Header File](includes/minitalk.h)**
+**[Header File](includes/minitalk.h)** \
 [Bonus Header](includes/minitalk_bonus.h)
 
 **[Makefile](Makefile)**

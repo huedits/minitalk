@@ -7,9 +7,9 @@ The purpose of this project is to code a small data exchange program using UNIX 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 
 ### Content
-This project has is finished but not graded.
+This project has been completed and evaluated.
 ```diff
-- Not finished.
++ Final grade 125/100.
 ```
 
 
@@ -19,8 +19,12 @@ Obs: This project includes previous project [ft_printf](https://github.com/huedi
 [client.c](srcs/client.c)
 | [server.c](srcs/server.c)
 | [utils.c](srcs/utils.c)
+| [client_bonus.c](srcs/client_bonus.c)
+| [server_bonus.c](srcs/server_bonus.c)
+| [utils_bonus.c](srcs/utils_bonus.c)
 
 **[Header File](includes/minitalk.h)**
+[Bonus Header](includes/minitalk_bonus.h)
 
 **[Makefile](Makefile)**
 

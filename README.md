@@ -2,7 +2,7 @@
 <p align="center"><i>Toc toc...</i></p><br/>
 The purpose of this project is to code a small data exchange program using UNIX signals.</p>
 
-<img src="https://game.42sp.org.br/static/assets/achievements/minitalkn.png" align="right">
+<img src="https://game.42sp.org.br/static/assets/achievements/minitalkm.png" align="right">
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 
